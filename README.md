@@ -1,0 +1,2 @@
+# LogicasProjetosIndividuais
+Logica de programação
