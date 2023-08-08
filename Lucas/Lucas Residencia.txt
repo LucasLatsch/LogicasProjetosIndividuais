@@ -1,0 +1,12 @@
+debora.souza@docente.firjan.senai.br
+(24)998399530
+
+https://meet.google.com/yqx-osbk-mca       aula deby
+https://meet.google.com/tkz-smqg-ndu       monitoria
+
+desafio : 
+
+pensar em um programa que faça um login. listar as informaçoes necessarias  
+
+dica = fazer um cadastro previamente (nome, email e senha) e depois confirmar 
+criar situação de esquecimento de senha 
