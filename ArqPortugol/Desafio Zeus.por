@@ -1,6 +1,7 @@
 programa
 {
 	inclua biblioteca Util --> u
+<<<<<<< HEAD
 	funcao inicio()
 	{
 		inteiro a, valor
@@ -19,6 +20,38 @@ programa
 			escreva("Escolha uma das seguintes opções:\n1-Soma(+)\n2-Subtração(-)\n3-Multiplicação(*)\n4-Divisão(/)\n5-Alterar os valores\n6-Sair")
 			escreva("\n======================================\n")
 			escreva("\nOpção: ")
+=======
+	inclua biblioteca Tipos --> t
+	funcao inicio()
+	{
+		inteiro a=0, valor=0
+		real div, b=0
+		cadeia x, y
+		
+		
+		enquanto( valor != 6 ){ // Criando menu de opcoes em laco ate o usuario sair
+			
+			
+			escreva("Digite o primeiro número inteiro: ") // Atribuindo valor a variavel
+			leia(x)
+			se( t.cadeia_e_inteiro(x, 10)){
+					a = t.cadeia_para_inteiro(x, 10)
+			}senao{
+				escreva("Opção invalida, tente novamente!\n\n")
+				inicio()
+			}
+			
+			escreva("Digite o segundo número inteiro: ") // Atribuindo valor a variavel
+			leia(y) 
+			se( t.cadeia_e_inteiro(y, 10)){
+					b = t.cadeia_para_inteiro(y, 10)
+			}senao{
+				escreva("Opção invalida, tente novamente!\n\n")
+				inicio()
+			}
+			limpa()
+			menu()
+>>>>>>> fc056592fd54ea533ba56f06bf78c64496c2604a
 			leia(valor)
 		
 			div  = a / b // Atribundo valor do calculo
@@ -76,15 +109,30 @@ programa
 		}enquanto( valor != 6 )
 	escreva("\n\n")
 	}
+<<<<<<< HEAD
+=======
+	funcao menu(){
+		escreva("\n======================================\n")
+		escreva("Escolha uma das seguintes opções:\n1-Soma(+)\n2-Subtração(-)\n3-Multiplicação(*)\n4-Divisão(/)\n5-Alterar os valores\n6-Sair")
+		escreva("\n======================================\n")
+		escreva("\nOpção: ")
+	}
+>>>>>>> fc056592fd54ea533ba56f06bf78c64496c2604a
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
+<<<<<<< HEAD
  * @POSICAO-CURSOR = 1555; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
+=======
+ * @POSICAO-CURSOR = 619; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = {a, 7, 10, 1};
+>>>>>>> fc056592fd54ea533ba56f06bf78c64496c2604a
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
