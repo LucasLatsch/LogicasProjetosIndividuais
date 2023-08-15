@@ -5,10 +5,10 @@ cadeiras ocupadas e as livres. Durante a interação, o sistema deve ser
 dinâmico e alterar as cadeiras livres para ocupadas a cada ingresso vendido.*/
 
 programa
-{	inclua biblioteca Util --> u
-	const inteiro LINHA = 8, COLUNA = 10
+{	inclua biblioteca Util --> u
+	const inteiro LINHA = 8, COLUNA = 10
 	funcao inicio()
-	{	
+	{	
 		cadeia op
 		inteiro matriz[8][10], opcao, cadeira, fila
 		// logico ingresso = verdadeiro, cheio=verdadeiro
@@ -37,6 +37,10 @@ programa
 						leia(fila)
 						escreva("\nAgora escreva a cadeira desejada:")
 						leia(cadeira)
+						se(matriz[fila-1][cadeira-1] == 1){
+							escreva("Esta cadeira ja esta ocupada, por favor verifique e tente novamente!\n")
+							pare
+						}
 						escreva("Deseja confirmar sua compra? ")
 						leia(op)
 						limpa()
@@ -79,7 +83,7 @@ programa
 		}
 	}
 	funcao alteraMatriz(inteiro matriz[][],inteiro fila,inteiro cadeira){
-		matriz[fila][cadeira] = 1
+		matriz[fila][cadeira] = 1	
 	}
 	funcao imprimeMatriz(inteiro matriz[][]){
 		escreva("\n----------------------------------------------------------------------------TELA----------------------------------------------------------------------------\n")
@@ -122,8 +126,8 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 533; 
- * @DOBRAMENTO-CODIGO = [80, 83, 97, 112];
+ * @POSICAO-CURSOR = 1236; 
+ * @DOBRAMENTO-CODIGO = [101, 116];
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {matriz, 13, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
